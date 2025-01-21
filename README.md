@@ -22,45 +22,45 @@ Follow these steps to install and configure Zeus:
 
 1. Clone the Repository
 bash
-git clone https://github.com/<your-repo>/zeus-tool.git
-cd zeus-tool
-2. Install Python Dependencies
+''''git clone https://github.com/<your-repo>/zeus-tool.git
+''''cd zeus-tool
+3. Install Python Dependencies
 Install colorama and other required Python libraries:
 
 bash
-pip install colorama
+''''pip install colorama
 
 3. Install External Tools
 Zeus relies on several external tools for subdomain enumeration and filtering. Install them as follows:
 
 Subfinder
-sudo apt update
-sudo apt install -y subfinder
+''''sudo apt update
+''''sudo apt install -y subfinder
 Or download it from the official repository: https://github.com/projectdiscovery/subfinder.
 
 Dnsx
-sudo apt install dnsx
+''''sudo apt install dnsx
 Or download it from the official repository: https://github.com/projectdiscovery/dnsx.
 
 Httpx
-sudo apt install httpx
+''''sudo apt install httpx
 Or download it from the official repository: https://github.com/projectdiscovery/httpx.
 
 4. Wordlist for DNS Brute-forcing
 Ensure you have a valid wordlist for DNS brute-forcing. You can use the following example:
 
 bash
-sudo apt install wordlists
+''''sudo apt install wordlists
 Or download SecLists:
 
 bash
-git clone https://github.com/danielmiessler/SecLists.git
+''''git clone https://github.com/danielmiessler/SecLists.git
 Usage
 
 Run Zeus
 Execute Zeus using Python:
 
-python zeus.py
+''''python zeus.py
 Workflow
 Enter the target domain when prompted:
 
